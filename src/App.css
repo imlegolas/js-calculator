@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .App-logo {
@@ -36,3 +40,77 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  
+}
+
+.button {
+  /* width: 70px; */
+  /* height: 50px; */
+  /* background-color: green; */
+  /* margin-left: 5px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: grey;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:  
+  "dis dis dis dis"
+  "AC C divide multiply"
+  "seven eight nine subtract"
+  "four five six plus"
+  "one two three equal"
+  "zero zero dot equal"
+  ;
+}
+
+.dis {
+  grid-area: dis;
+  background-color: rgb(29, 25, 25);
+  border: 1px solid black;
+  font-size: 20px;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.display-input {
+  width: 97%;
+  /* margin-right: 50px; */
+  text-align: right;
+}
+
+.zero {
+  grid-area: zero;
+}
+
+.equal {
+  grid-area: equal;
+}
+
+.numbers {
+  background-color: #4e5157;
+}
+
+.total {
+  width: 97%;
+  text-align: left;
+  color: rgb(158, 1, 1);
+  font-size: 15px;
+}
+
